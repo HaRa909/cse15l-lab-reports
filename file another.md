@@ -12,6 +12,11 @@
 
 > Hello There, this is a quote
 
+1. yes
+2. no
+3. yes
+4. no
+   
 * Listing things
 * and other things
 
@@ -21,11 +26,14 @@
   4. four
   5. five
 
-     
+     ---
+     ---
+     ---
+     ---
 more stuff
     
      
-     ---
+
 
 `inclined?`
 
