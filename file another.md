@@ -25,8 +25,8 @@
 more stuff
      ---
 
-'inclined?'
+`inclined?`
 
-'''
+```
 something more I think
-'''
+```
