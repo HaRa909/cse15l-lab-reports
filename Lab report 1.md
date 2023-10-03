@@ -35,11 +35,11 @@ cd: Using the cd command on an actual file doesn't work, hence why the error "No
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/160fca75-ebbc-47cd-b44f-8cb07a12df3a)
 
-ls: Using the file to 
+ls: The ls command is meant to display files underneath a directory, when there is an actual file that is being read the system seems to have another soft error. The error has the file path repeated from what is input, most likely due to the fact it does not know what to display.
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/3aa9537f-c312-43bd-8127-5fcbeeeda40f)
 
-cat:
+cat: 
 
 
 
