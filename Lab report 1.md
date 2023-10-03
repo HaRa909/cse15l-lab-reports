@@ -3,7 +3,7 @@
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/395d4d68-beb4-49cb-bee2-c1952126c163)
 
-cd: The change directory command requires a directory input to do anything, hence why nothing happened.
+cd: The change directory command requires a directory input to do anything, hence why nothing happened. This is a soft error as there was no error message, but a 
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/f4103566-3526-4778-bc22-ad135040f692)
 
