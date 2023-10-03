@@ -15,7 +15,7 @@ ls: the lecture1 directory contains Hello.class, Hello.java, messages, and READM
 
 cat: Due to the fact the cat command is carried out in a directory, it displays the "Is a directory" message because of the lack of files to read.
 
-![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/e5e645dc-a6a6-4f99-a7bd-ff879f10dca2)
+![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/dd2533bd-2584-4f6f-840b-1dc435d0e003)
 
 cd: Using the cd command on an actual file doesn't work, hence why the error "Not a directory" is displayed, cd is meant to navigate directories and not files.
 
