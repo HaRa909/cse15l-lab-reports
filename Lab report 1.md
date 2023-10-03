@@ -9,17 +9,17 @@ cat: the cat command reads data in a file, and due to the lack of a file selecte
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/5f0e8362-268e-46a1-b407-c7db4f4d0dcb)
 
-cd: 
+cd: The change directory command is given a directory to go to, the lecture1 directory, and so changes the location to the lecture1 directory.
 
-ls:
+ls: the lecture1 directory contains Hello.class, Hello.java, messages, and README in it, making it so that when the ls command is carried out, all files and directories inside the lecture1 folder are displayed.
 
-cat:
+cat: Due to the fact the cat command is carried out in a directory, it displays the "Is a directory" message because of the lack of files to read.
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/e5e645dc-a6a6-4f99-a7bd-ff879f10dca2)
 
-cd:
+cd: Using the cd command on an actual file doesn't work, hence why the error "Not a directory" is displayed, cd is meant to navigate directories and not files.
 
-ls:
+ls: Using the file to 
 
 cat:
 
