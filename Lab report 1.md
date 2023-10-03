@@ -39,7 +39,7 @@ ls: The ls command is meant to display files underneath a directory, when there 
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/3aa9537f-c312-43bd-8127-5fcbeeeda40f)
 
-cat: 
+cat: The cat command attempts to read a file and dsiplay its contents through text, hence why this time the command was succesful. There was no error like the previous two times becasue the file path actually led to something it could read, a text file.
 
 
 
