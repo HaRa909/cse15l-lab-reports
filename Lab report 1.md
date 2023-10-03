@@ -11,21 +11,21 @@ ls: the ls command lists files and directories on what is essentially the root, 
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/241b9d7f-b95e-448a-9484-cacfef37fc89)
 
-cat: the cat command reads data in a file, and due to the lack of a file selected, nothing happens. 
+cat: the cat command reads data in a file, and due to the lack of a file selected, nothing happens. There is somewhat of an error where the output, requiring the exit command of control v to escape from it due to the fact the cat command needs something to read, the complete emptiness in parameters causes a problem.
 
 # Examples of using the command with a path to a directory as an argument.
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/dfd08f0a-8fc3-4a06-bcfa-3e5baa9d9100)
 
-cd: The change directory command is given a directory to go to, the lecture1 directory, and so changes the location to the lecture1 directory.
+cd: The change directory command is given a directory to go to, the lecture1 directory, and so changes the location to the lecture1 directory. No error occurs as a result.
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/e58e89e8-4d85-4e87-b89c-78d36eae579b)
 
-ls: the lecture1 directory contains Hello.class, Hello.java, messages, and README in it, making it so that when the ls command is carried out, all files and directories inside the lecture1 folder are displayed.
+ls: the lecture1 directory contains Hello.class, Hello.java, messages, and README in it, making it so that when the ls command is carried out, all files and directories inside the lecture1 folder are displayed. No error occurs here.
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/ad9c5a9c-d447-48c7-99ce-fb6f5471dfa2)
 
-cat: Due to the fact the cat command is carried out in a directory, it displays the "Is a directory" message because of the lack of files to read.
+cat: Due to the fact the cat command is carried out in a directory, it displays the "Is a directory" message because of the lack of files to read. This could be seen as an error due to the lack of cat doing wht it is designed to do, read files.
 
 # Examples of using the command with a path to a file as an argument.
 
