@@ -3,11 +3,11 @@
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/24850c81-e0ad-44a4-b9a4-7c5b637932eb)
 
-cd: The change directory command requires a directory input to do anything, hence why nothing happened. This is a soft error as there was no error message, but nothing happens in response to the command.
+cd: The change directory command requires a directory input to do anything, hence why nothing happened when there was no directory specified. This is a soft error as there was no error message, but nothing happens in response to the command.
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/f4103566-3526-4778-bc22-ad135040f692)
 
-ls: the ls command lists files and directories on what is essentially the root, the only files that show up upon this command are going to be the ones at the root like Lecture1 and lab1, due to them being the master folders.
+ls: the ls command lists files and directories on what is essentially the root, the only files that show up upon this command are going to be the ones at the root like Lecture1 and lab1, due to them being the master folders. There is no error as the comand worked exactly as it was meant to.
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/241b9d7f-b95e-448a-9484-cacfef37fc89)
 
