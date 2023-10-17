@@ -25,7 +25,7 @@ ls: the lecture1 directory contains Hello.class, Hello.java, messages, and READM
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/ad9c5a9c-d447-48c7-99ce-fb6f5471dfa2)
 
-cat: Due to the fact the cat command is carried out in a directory, it displays the "Is a directory" message because of the lack of files to read. This could be seen as an error due to the lack of cat doing with it is designed to do, read files.
+cat: Due to the fact the cat command is carried out in a directory, it displays the "Is a directory" message because of the lack of files to read. This could be seen as an error due to the lack of cat doing what it is designed to do, read files.
 
 # Examples of using the command with a path to a file as an argument.
 
