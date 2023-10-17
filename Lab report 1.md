@@ -3,7 +3,7 @@
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/24850c81-e0ad-44a4-b9a4-7c5b637932eb)
 
-cd: The change directory command requires a directory input to do anything, hence why nothing happened when there was no directory specified. This is a soft error as there was no error message, but nothing happens in response to the command.
+cd: The change directory command requires a directory input to do anything, otherwise it defaults to the home directory, hence why nothing happened when there was no directory specified. There is no error as the command is working exactly as it is meant to.
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/f4103566-3526-4778-bc22-ad135040f692)
 
