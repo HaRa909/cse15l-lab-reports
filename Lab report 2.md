@@ -68,12 +68,11 @@ The main method in class StringServer and the handleRequest method of Handler cl
 
 # Part 2
 
-![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/ce16920e-5b25-42f4-b356-f0a8853417fd)
-![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/f2b7a652-3442-44ef-9158-ad42ae9a5fa9)
+1,2 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/ce16920e-5b25-42f4-b356-f0a8853417fd)
+
+3 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/f2b7a652-3442-44ef-9158-ad42ae9a5fa9)
 
 
 # Part 3
 
-In a couple of sentences, describe something you learned from lab in week 2 or 3 that you didn’t know before.
-
-SOmething 
+The most important thing I have learned from labs these past two weeks would be how webservers work and a general idea of how urls work. Another thing I did not know before was the general idea behind how search engines work, with the samll project regarding designing one bringing me to a surface level understanding of how they function.
