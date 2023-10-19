@@ -75,4 +75,7 @@ The main method in class StringServer and the handleRequest method of Handler cl
 
 # Part 3
 
-The most important thing I have learned from labs these past two weeks would be how webservers work and a general idea of how urls work. Another thing I did not know before was the general idea behind how search engines work, with the samll project regarding designing one bringing me to a surface level understanding of how they function.
+The most important things I have learned from labs these past two weeks would be how web servers work and a general idea of how urls work. Another thing I did not know before was the general idea behind how search engines work, with the small project regarding designing one bringing me to a surface level understanding of how they function.
+
+
+
