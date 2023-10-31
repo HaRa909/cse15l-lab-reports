@@ -2,7 +2,8 @@
 
 The code for StringServer is down below:
 
-`import java.io.IOException;
+```
+import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList; // import the ArrayList class
 
@@ -38,12 +39,12 @@ class Handler implements URLHandler {
         }
 
         
-    }`
+    }
 
 
         
 
-`class StringServer {
+class StringServer {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -54,8 +55,8 @@ class Handler implements URLHandler {
 
         Server.start(port, new Handler());
     }
-}`
-
+}
+```
 
 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/c388b6f9-85d2-4e6b-a62f-8e23f220718d)
 
