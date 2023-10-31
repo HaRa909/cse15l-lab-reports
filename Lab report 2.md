@@ -71,11 +71,10 @@ The main method in class `StringServer` and the `handleRequest` method of `Handl
 # Part 2
 
 1 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/95f54a9c-2ef6-42a6-bb34-d95222025d78)
-
+id_rsa is the private key here
 
 2 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/457e9b3c-f66a-41fa-b81a-4d606e0e9ee0)
-
-3 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/ce16920e-5b25-42f4-b356-f0a8853417fd)
+the public key is stored in authorized_keys file
 
 3 ![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/f2b7a652-3442-44ef-9158-ad42ae9a5fa9)
 
