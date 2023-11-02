@@ -65,7 +65,10 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 
-The reason why the new code fixes the old code is because when the AverageWithoutLowest method is given an array of numbers that have two or more numbers that fulfill that fit the label of lowest number, and it will throw away all of that number, excluding it from the calculation of the average, with the error being that this code only thinks about what would happen if there is one lowest number rather than multiple. The solution is to track how many times the lowest number comes up and subtract by what the total sum is dividing by, this way the average really does ignore the smallest numbers completely.
+The reason why the new code fixes the old code is because when the AverageWithoutLowest method is given an array of numbers that have two or more numbers 
+that fulfill that fit the label of lowest number, and it will throw away all of that number, excluding it from the calculation of the average, with the error 
+being that this code only thinks about what would happen if there is one lowest number rather than multiple. The solution is to track how many times the 
+lowest number comes up and subtract by what the total sum is dividing by, this way the average really does ignore the smallest numbers completely.
 
 
 
