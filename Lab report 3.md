@@ -118,6 +118,7 @@ biomed/gb-2002-3-8-research0040.txt:83:          for the different-length words 
 plos/journal.pbio.0020310.txt:7:        about ethics and aesthetics; the latest buzzwords are commodities and consumers.
 ```
 ex4
+<font size= “3”>
 ```
 $ grep -n "Usage" */*.txt
 
@@ -131,6 +132,7 @@ biomed/1471-2334-2-24.txt:532:        Control Group Status variable and the Odds
 biomed/gb-2001-2-4-research0010.txt:790:        CUTG (Codon Usage Tabulated from GenBank) [ 2, 76], which
 biomed/gb-2003-4-2-r14.txt:1176:          genomes were obtained from the Codon Usage Database [ 47,
 ```
+</font>
 
 The -n command is stating the line number of which the string being matched to comes from. The reason this is useful is because knowing the line number makes it much easier to navigate the files you have found a string match for.
 
