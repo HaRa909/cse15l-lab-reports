@@ -102,9 +102,86 @@ The -o command removes all excess words that don't fit the matching parameters i
 Source: https://linuxcommand.org/lc3_man_pages/grep1.html.
 
 
-
 **grep - n**
 
+```
+$ grep -n "words are" */*.txt
+
+biomed/1472-6882-3-3.txt:70:        Plus. Author Keywords are taken from a list of keywords
+biomed/gb-2002-3-8-research0040.txt:12:        most other words are used infrequently. When the size of
+biomed/gb-2002-3-8-research0040.txt:24:        word against its rank, where words are ranked according to
+biomed/gb-2002-3-8-research0040.txt:83:          for the different-length words are nearly identical (
+plos/journal.pbio.0020310.txt:7:        about ethics and aesthetics; the latest buzzwords are commodities and consumers.
+```
+```
+$ grep -n "Usage" */*.txt
+
+911report/chapter-13.2.txt:268:                the situation. See FBI report, "American Airlines Airphone Usage," Sept. 20, 2001;
+911report/chapter-13.2.txt:376:            56. FBI report, "American Airlines Airphone Usage," Sept. 20, 2001; FBI report of
+911report/chapter-13.2.txt:387:                Airlines Airphone Usage," Sept. 20, 2001; FBI report of investigation, interview of
+911report/chapter-13.2.txt:391:            58. FBI report, "American Airlines Airphone Usage," Sept. 20, 2001; FBI report of
+biomed/1471-2091-2-13.txt:506:          The program Codon Usage Tabulated from GenBank (CUTG)
+biomed/1471-2148-2-8.txt:634:        using the Countcodon program available from the Codon Usage
+biomed/1471-2334-2-24.txt:532:        Control Group Status variable and the Odds of Condom Usage
+biomed/gb-2001-2-4-research0010.txt:790:        CUTG (Codon Usage Tabulated from GenBank) [ 2, 76], which
+biomed/gb-2003-4-2-r14.txt:1176:          genomes were obtained from the Codon Usage Database [ 47,
+```
+
+The -n command is stating the line number of which the string being matched to comes from. The reason this is useful is because knowing the line number makes it much easier to navigate the files you have found a string match for.
+
+Source: https://linuxcommand.org/lc3_man_pages/grep1.html.
+
+
 **grep -h**
+```
+$ grep -h "Usage" */*.txt
+
+               the situation. See FBI report, "American Airlines Airphone Usage," Sept. 20, 2001;
+            56. FBI report, "American Airlines Airphone Usage," Sept. 20, 2001; FBI report of
+                Airlines Airphone Usage," Sept. 20, 2001; FBI report of investigation, interview of
+            58. FBI report, "American Airlines Airphone Usage," Sept. 20, 2001; FBI report of
+          The program Codon Usage Tabulated from GenBank (CUTG)
+        using the Countcodon program available from the Codon Usage
+        Control Group Status variable and the Odds of Condom Usage
+        CUTG (Codon Usage Tabulated from GenBank) [ 2, 76], which
+          genomes were obtained from the Codon Usage Database [ 47,
+```
+
+```
+$ grep -h "Hello" */*.txt
+
+    At 10:39, the Vice President updated the Secretary on the air threat conference: Vice President: There's been at least three instances here where we've had reports of aircraft approaching Washington-a couple were confirmed hijack. And, pursuant to the President's instructions I gave authorization for them to be taken out. Hello?
+```
+
+The -h command removes the file directory from the output, leaving only the contents being searched for inside the file. The use of the command would be to analyze the outputs of the file without caring for where the file’s path is, it would be useful for collecting information in files for analysis.
+
+Source: https://linuxcommand.org/lc3_man_pages/grep1.html.
+
 
 **grep -o**
+
+```
+$ grep -o "words are" */*.txt
+
+biomed/1472-6882-3-3.txt:words are
+biomed/gb-2002-3-8-research0040.txt:words are
+biomed/gb-2002-3-8-research0040.txt:words are
+biomed/gb-2002-3-8-research0040.txt:words are
+plos/journal.pbio.0020310.txt:words are
+```
+```
+$ grep -o -i "wOrdS aRe" */*.txt
+
+biomed/1472-6882-3-3.txt:words are
+biomed/gb-2002-3-8-research0040.txt:words are
+biomed/gb-2002-3-8-research0040.txt:words are
+biomed/gb-2002-3-8-research0040.txt:words are
+plos/journal.pbio.0020310.txt:words are
+```
+
+The -o command removes all excess words that don't fit the matching parameters in the grep command. The -o command is useful when you want to only see the words matching against the arguments being placed in the grep command, as seen with how it is used in conjunction with the -i command in the second example.
+
+
+Source: https://linuxcommand.org/lc3_man_pages/grep1.html.
+
+
