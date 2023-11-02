@@ -3,19 +3,19 @@
 The method tested was the averageWithoutLowest method that is part of the ArrayExamples.java class.
 
 **A failure-inducing input for the buggy program**
-`
+```
 double[] input3 = {2,2,2,4,8};
 assertEquals(6, ArrayExamples.averageWithoutLowest(input3),.01);
-`
+```
 The Failure inducing input was the array of 2,2,2,4,8.
 
 
 **An input that doesn’t induce a failure**
 
-`
+```
 double[] input2 = {2,4,6,8,10};
 assertEquals(7, ArrayExamples.averageWithoutLowest(input2),.01);
-`
+```
 The input 2,4,6,8,10, works successfully.
 
 
@@ -26,7 +26,7 @@ The input 2,4,6,8,10, works successfully.
 **The bug**
 
 Original code, has the bug
-`
+```
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -39,11 +39,11 @@ Original code, has the bug
     }
     return sum / (arr.length - 1);
   }
-`
+```
 
 Revised code, fixes the bug
 
-`
+```
 static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -61,7 +61,7 @@ static double averageWithoutLowest(double[] arr) {
     }
        return sum / (arr.length - tracker);
   }
-`
+```
 
 The reason why the new code fixes the old code is because when the AverageWithoutLowest method is given an array of numbers that have two or more numbers that fulfill that fit the label of lowest number, and it will throw away all of that number, excluding it from the calculation of the average, with the error being that this code only thinks about what would happen if there is one lowest number rather than multiple. The solution is to track how many times the lowest number comes up and subtract by what the total sum is dividing by, this way the average really does ignore the smallest numbers completely.
 
@@ -71,7 +71,7 @@ The reason why the new code fixes the old code is because when the AverageWithou
 # Part 2 - Researching the grep command
 
 **grep - i**
-
+```
 $ grep -o "words are" */*.txt
 
 
@@ -80,8 +80,8 @@ biomed/gb-2002-3-8-research0040.txt:words are
 biomed/gb-2002-3-8-research0040.txt:words are
 biomed/gb-2002-3-8-research0040.txt:words are
 plos/journal.pbio.0020310.txt:words are
-
-
+```
+```
 $ grep -o -i "wOrdS aRe" */*.txt
 
 
@@ -90,7 +90,7 @@ biomed/gb-2002-3-8-research0040.txt:words are
 biomed/gb-2002-3-8-research0040.txt:words are
 biomed/gb-2002-3-8-research0040.txt:words are
 plos/journal.pbio.0020310.txt:words are
-
+```
 
 
 
