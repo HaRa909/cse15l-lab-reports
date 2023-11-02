@@ -118,7 +118,7 @@ biomed/gb-2002-3-8-research0040.txt:83:          for the different-length words 
 plos/journal.pbio.0020310.txt:7:        about ethics and aesthetics; the latest buzzwords are commodities and consumers.
 ```
 ex4
-<font size= “3”>
+<font size= “1”>
 ```
 $ grep -n "Usage" */*.txt
 
