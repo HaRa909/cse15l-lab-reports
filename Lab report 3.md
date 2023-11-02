@@ -5,6 +5,7 @@ The method tested was the averageWithoutLowest method that is part of the ArrayE
 **A failure-inducing input for the buggy program**
 ```
 double[] input3 = {2,2,2,4,8};
+
 assertEquals(6, ArrayExamples.averageWithoutLowest(input3),.01);
 ```
 The Failure inducing input was the array of 2,2,2,4,8.
@@ -14,6 +15,7 @@ The Failure inducing input was the array of 2,2,2,4,8.
 
 ```
 double[] input2 = {2,4,6,8,10};
+
 assertEquals(7, ArrayExamples.averageWithoutLowest(input2),.01);
 ```
 The input 2,4,6,8,10, works successfully.
