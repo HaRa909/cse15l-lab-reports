@@ -118,8 +118,9 @@ biomed/gb-2002-3-8-research0040.txt:83:          for the different-length words 
 plos/journal.pbio.0020310.txt:7:        about ethics and aesthetics; the latest buzzwords are commodities and consumers.
 ```
 ex4
-<sub>
+
 ```
+<sub>
 $ grep -n "Usage" */*.txt
 
 911report/chapter-13.2.txt:268:                the situation. See FBI report, "American Airlines Airphone Usage," Sept. 20, 2001;
@@ -131,8 +132,9 @@ biomed/1471-2148-2-8.txt:634:        using the Countcodon program available from
 biomed/1471-2334-2-24.txt:532:        Control Group Status variable and the Odds of Condom Usage
 biomed/gb-2001-2-4-research0010.txt:790:        CUTG (Codon Usage Tabulated from GenBank) [ 2, 76], which
 biomed/gb-2003-4-2-r14.txt:1176:          genomes were obtained from the Codon Usage Database [ 47,
-```
 </sub>
+```
+
 
 The -n command is stating the line number of which the string being matched to comes from. The reason this is useful is because knowing the line number makes it much easier to navigate the files you have found a string match for.
 
