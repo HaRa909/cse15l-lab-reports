@@ -157,7 +157,9 @@ ex6
 ```
 $ grep -h "Hello" */*.txt
 
-    At 10:39, the Vice President updated the Secretary on the air threat conference: Vice President: There's been at least three instances here where we've had reports of aircraft approaching Washington-a couple were confirmed hijack. And, pursuant to the President's instructions I gave authorization for them to be taken out. Hello?
+    At 10:39, the Vice President updated the Secretary on the air threat conference: Vice President: There's been at least three instances here where we've
+ had reports of aircraft approaching Washington-a couple were confirmed hijack. And, pursuant to the President's instructions I gave authorization for them
+to be taken out. Hello?
 ```
 
 The -h command removes the file directory from the output, leaving only the contents being searched for inside the file. The use of the command would be to analyze the outputs of the file without caring for where the file’s path is, it would be useful for collecting information in files for analysis.
