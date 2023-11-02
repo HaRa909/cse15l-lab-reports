@@ -73,6 +73,8 @@ The reason why the new code fixes the old code is because when the AverageWithou
 # Part 2 - Researching the grep command
 
 **grep - i**
+
+ex1
 ```
 $ grep -o "words are" */*.txt
 
@@ -83,6 +85,7 @@ biomed/gb-2002-3-8-research0040.txt:words are
 biomed/gb-2002-3-8-research0040.txt:words are
 plos/journal.pbio.0020310.txt:words are
 ```
+ex2
 ```
 $ grep -o -i "wOrdS aRe" */*.txt
 
@@ -104,6 +107,7 @@ Source: https://linuxcommand.org/lc3_man_pages/grep1.html.
 
 **grep - n**
 
+ex3
 ```
 $ grep -n "words are" */*.txt
 
@@ -113,6 +117,7 @@ biomed/gb-2002-3-8-research0040.txt:24:        word against its rank, where word
 biomed/gb-2002-3-8-research0040.txt:83:          for the different-length words are nearly identical (
 plos/journal.pbio.0020310.txt:7:        about ethics and aesthetics; the latest buzzwords are commodities and consumers.
 ```
+ex4
 ```
 $ grep -n "Usage" */*.txt
 
@@ -133,6 +138,8 @@ Source: https://linuxcommand.org/lc3_man_pages/grep1.html.
 
 
 **grep -h**
+
+ex5
 ```
 $ grep -h "Usage" */*.txt
 
@@ -146,7 +153,7 @@ $ grep -h "Usage" */*.txt
         CUTG (Codon Usage Tabulated from GenBank) [ 2, 76], which
           genomes were obtained from the Codon Usage Database [ 47,
 ```
-
+ex6
 ```
 $ grep -h "Hello" */*.txt
 
@@ -160,6 +167,7 @@ Source: https://linuxcommand.org/lc3_man_pages/grep1.html.
 
 **grep -o**
 
+ex7
 ```
 $ grep -o "words are" */*.txt
 
@@ -169,6 +177,7 @@ biomed/gb-2002-3-8-research0040.txt:words are
 biomed/gb-2002-3-8-research0040.txt:words are
 plos/journal.pbio.0020310.txt:words are
 ```
+ex8
 ```
 $ grep -o -i "wOrdS aRe" */*.txt
 
