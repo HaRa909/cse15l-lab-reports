@@ -1,8 +1,14 @@
-1. ssh cs15lfa23iq@ieng6.ucsd.edu
+1. 
 
 
 <img width="620" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/2fd87a87-e372-46d1-bbf5-f5101bf2bfb4">
 <img width="603" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/95ef1431-93a8-41ee-aa2c-838b9e7962ff">
+
+
+**ssh cs15lfa23iq@ieng6.ucsd.edu**
+
+This command was used to 
+
 
 
 2.
@@ -22,6 +28,10 @@ git clone git@github.com:HaRa909/lab7.git
 4.
 <img width="694" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/b7c93d4a-ca3a-4e8f-82fc-a74cd85dff13">
 <img width="685" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/96491735-dfe1-4c12-8b0e-d97de2aa74dc">
+
+
+<shift+g> <6k> <shift+e> <x> <a> <2> <esc> <:wq> 
+
 
 5.
 <img width="355" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/6c75819d-b5ab-4fda-b1d0-97627c4acf7c">
