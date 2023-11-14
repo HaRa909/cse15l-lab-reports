@@ -21,11 +21,32 @@ assertEquals(7, ArrayExamples.averageWithoutLowest(input2),.01);
 The input 2,4,6,8,10, works successfully.
 
 
-**The symptom, result of testing previously 2 inputs**
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.net.URI;
 
-![image](https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/c6886785-9ab4-4fd9-acb4-ecae36340740)
+public class tests {
+     @Test
+     public void testingpart1() {
+        double[] input3 = {2,2,2,4,8};
+        assertEquals(6, ArrayExamples.averageWithoutLowest(input3),.01);
+      }  
+
+     @Test
+     public void testingpart2() {
+       double[] input2 = {2,4,6,8,10};
+        assertEquals(7, ArrayExamples.averageWithoutLowest(input2),.01);
+
+      }
+
+}
+```
+
+**The symptom, result of running code above with the 2 inputs**
 
 **The bug**
+<img width="333" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/5211e00a-1cd9-45a3-97b4-5affdacd4148">
 
 Original code, has the bug
 ```
