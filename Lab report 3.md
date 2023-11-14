@@ -48,6 +48,7 @@ public class tests {
 **The symptom, result of running code above with the 2 inputs**
 
 **The bug**
+
 <img width="333" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/5211e00a-1cd9-45a3-97b4-5affdacd4148">
 
 Original code, has the bug
