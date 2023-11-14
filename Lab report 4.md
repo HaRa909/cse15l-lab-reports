@@ -12,12 +12,16 @@ git clone git@github.com:HaRa909/lab7.git
 
 
 3. 
+<img width="491" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/d3387840-b6da-4694-9d54-08f9013bfb49">
 
-<img width="559" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/af88f0d4-eadd-4fb1-8b5d-7273dc04dda7">
 
-5.
+
+
+
+
+4.
 <img width="694" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/b7c93d4a-ca3a-4e8f-82fc-a74cd85dff13">
 
-6.
+5.
 
-7. 
+6. 
