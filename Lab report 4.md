@@ -24,5 +24,7 @@ git clone git@github.com:HaRa909/lab7.git
 <img width="685" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/96491735-dfe1-4c12-8b0e-d97de2aa74dc">
 
 5.
+<img width="355" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/6c75819d-b5ab-4fda-b1d0-97627c4acf7c">
 
 6. 
+<img width="341" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/26fd1f77-513f-4079-ad67-6ca2cbbc3a60">
