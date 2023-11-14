@@ -5,9 +5,9 @@
 <img width="603" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/95ef1431-93a8-41ee-aa2c-838b9e7962ff">
 
 
-**ssh cs15lfa23iq@ieng6.ucsd.edu**
+**ssh cs15lfa23iq@ieng6.ucsd.edu** `enter`
 
-This command was used to 
+This command was used to ssh into the remote computer ieng6.
 
 
 
