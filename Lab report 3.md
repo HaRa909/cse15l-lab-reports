@@ -21,7 +21,7 @@ assertEquals(7, ArrayExamples.averageWithoutLowest(input2),.01);
 The input 2,4,6,8,10, works successfully.
 
 
-The two failure inducing inputs put into a java file can be seen below
+The two inputs are put into the java file below
 
 ```
 import static org.junit.Assert.*;
