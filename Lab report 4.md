@@ -43,15 +43,19 @@ Command will move the curser up 6 lines, the reason being was because that was w
 Command will move the curser to the end of the first word, where the issue with the code was, where the 1 needed to be changed into a 2.
 
 **<x>** 
-Command will delete the character the curser is on, which was done by the last command, this will 
+Command will delete the character the curser is on, which was done by the last command, this is the first part of fixing the bug with the variable name.
   
 **<a>** 
+Command will put Vim into insert mode, allowing us to add to the java file now.
   
 **<2>** 
+This is text that will be inserted via vim's insert mode, we now fix the bug by putting in the correct number for the variable.
 
 **<esc>**
+Command will exit insert mode and put us in normal mode, we are done with our edits.
 
 **<:wq> `enter`** 
+COmmand will write our changes onto the java file and then quit vim, bringing us back to the terminal.
 
 
 5.
