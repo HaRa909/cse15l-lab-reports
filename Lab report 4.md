@@ -1,6 +1,4 @@
 1. 
-
-
 <img width="620" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/2fd87a87-e372-46d1-bbf5-f5101bf2bfb4">
 <img width="603" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/95ef1431-93a8-41ee-aa2c-838b9e7962ff">
 
@@ -12,7 +10,6 @@ This command was used to ssh into the remote computer ieng6.
 
 
 2.
-
 <img width="578" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/6f84a828-f060-4d7c-960d-a6540d617d6e">
 
 
@@ -55,11 +52,13 @@ This is text that will be inserted via vim's insert mode, we now fix the bug by 
 Command will exit insert mode and put us in normal mode, we are done with our edits.
 
 **<:wq> `enter`** 
-COmmand will write our changes onto the java file and then quit vim, bringing us back to the terminal.
+Command will write our changes onto the java file and then quit vim, bringing us back to the terminal.
 
 
 5.
 <img width="355" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/6c75819d-b5ab-4fda-b1d0-97627c4acf7c">
+
+**test.sh** command ran, the command simply runs through a script explaining that the Java file now matches with the testing, meaning the changes made were successful.
 
 6. 
 <img width="341" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/26fd1f77-513f-4079-ad67-6ca2cbbc3a60">
