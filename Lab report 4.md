@@ -62,3 +62,9 @@ Command will write our changes onto the java file and then quit vim, bringing us
 
 6. 
 <img width="341" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/26fd1f77-513f-4079-ad67-6ca2cbbc3a60">
+
+**git add ListExamples.java**
+
+**git commit**
+
+**git push**
