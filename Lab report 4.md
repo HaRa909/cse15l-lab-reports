@@ -23,7 +23,7 @@ This command clones the forked repository that can be later on pushed to.
 3. 
 <img width="491" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/d3387840-b6da-4694-9d54-08f9013bfb49">
 
-**test.sh** command ran, the command simply runs through a script explaining there is an issue with the 
+**test.sh** command ran, the command simply runs through a script explaining there is an issue with ListExamples.java file
 
 
 
@@ -33,7 +33,24 @@ This command clones the forked repository that can be later on pushed to.
 <img width="685" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/96491735-dfe1-4c12-8b0e-d97de2aa74dc">
 
 
-<shift+g> <6k> <shift+e> <x> <a> <2> <esc> <:wq> 
+**<shift+g>** 
+Command will move curser to the end of the file. This was useful because the problem with the file was located at the end of the java file.
+
+**<6k> `enter`**
+Command will move the curser up 6 lines, the reason being was because that was where the line of interest was. The 6 ran the command that moves up a line, k, 6 times.
+
+**<shift+e>** 
+Command will move the 
+
+**<x>** 
+  
+**<a>** 
+  
+**<2>** 
+
+**<esc>**
+
+**<:wq> `enter`** 
 
 
 5.
