@@ -40,9 +40,10 @@ Command will move curser to the end of the file. This was useful because the pro
 Command will move the curser up 6 lines, the reason being was because that was where the line of interest was. The 6 ran the command that moves up a line, k, 6 times.
 
 **<shift+e>** 
-Command will move the 
+Command will move the curser to the end of the first word, where the issue with the code was, where the 1 needed to be changed into a 2.
 
 **<x>** 
+Command will delete the character the curser is on, which was done by the last command, this will 
   
 **<a>** 
   
