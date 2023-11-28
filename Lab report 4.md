@@ -62,6 +62,7 @@ Command will write our changes onto the java file and then quit vim, bringing us
 
 
 5.
+
 <img width="355" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/6c75819d-b5ab-4fda-b1d0-97627c4acf7c">
 
 `bash test.sh <enter>`
