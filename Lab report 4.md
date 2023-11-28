@@ -19,7 +19,7 @@ This command was used to ssh into the remote computer ieng6.
 
 This command clones the forked repository that can be later pushed to.
 
-3. 
+3.
 
 <img width="491" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/d3387840-b6da-4694-9d54-08f9013bfb49">
 
@@ -29,8 +29,7 @@ Command ran, the command simply runs through a script explaining there is an iss
 
 
 
-
-4. 
+4.
 
 <img width="694" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/b7c93d4a-ca3a-4e8f-82fc-a74cd85dff13">
 <img width="685" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/96491735-dfe1-4c12-8b0e-d97de2aa74dc">
