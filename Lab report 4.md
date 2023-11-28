@@ -80,7 +80,7 @@ This will add the file we just saved and editted on our remote computer, ListExa
 
 `git commit <enter>`
 
-This will confirm all the files we used `git add` on and prepare it for the next command. THe command puts us in a vim terminal. Over here we can either add commit messages or not. In the case of wanting to do commit messages, do **<a> `enter`** for insert mode, then type in whatever it is you want to leave as a message, then click **<esc>** to go into normal mode, then type in **<:wq> `enter`** to save and exit the commit message, which will exit vim and put you back in the terminal. If you don't want to go into vim, you can use the -m command with commit like git commit -m "comment" or you can simply exit without putting any messages in.
+This will confirm all the files we used `git add` on and prepare it for the next command. THe command puts us in a vim terminal. Over here we can either add commit messages or not. In the case of wanting to do commit messages, do `<a> <enter>` for insert mode, then type in whatever it is you want to leave as a message, then click `<esc>` to go into normal mode, then type in `<:wq> <enter>` to save and exit the commit message, which will exit vim and put you back in the terminal. If you don't want to go into vim, you can use the -m command with commit like `git commit -m "comment"` or you can simply exit without putting any messages in.
 
 `git push <enter>`
 
