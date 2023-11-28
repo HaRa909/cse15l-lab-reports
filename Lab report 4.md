@@ -68,8 +68,7 @@ Command will write our changes onto the java file and then quit vim, bringing us
 
 command ran, the command simply runs through a script explaining that the Java file now matches with the testing, meaning the changes made were successful.
 
-6. 
-
+6.
 
 <img width="575" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/1345834d-75c2-4e89-8fe0-6b4b7ae3d584">
 
