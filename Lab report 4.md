@@ -27,10 +27,14 @@ Command ran, the command simply runs through a script explaining there is an iss
 
 
 
-4.
+4. 
+
+
 <img width="694" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/b7c93d4a-ca3a-4e8f-82fc-a74cd85dff13">
 <img width="685" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/96491735-dfe1-4c12-8b0e-d97de2aa74dc">
 
+`vim ListExamples.java file`
+Command puts us in the vim interface
 
 `<shift+g>`
 Command will move curser to the end of the file. This was useful because the problem with the file was located at the end of the java file.
@@ -60,12 +64,15 @@ Command will write our changes onto the java file and then quit vim, bringing us
 5.
 <img width="355" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/6c75819d-b5ab-4fda-b1d0-97627c4acf7c">
 
-`test.sh <enter>`
+`bash test.sh <enter>`
 
 command ran, the command simply runs through a script explaining that the Java file now matches with the testing, meaning the changes made were successful.
 
 6. 
-<img width="341" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/26fd1f77-513f-4079-ad67-6ca2cbbc3a60">
+
+
+<img width="575" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/1345834d-75c2-4e89-8fe0-6b4b7ae3d584">
+
 
 `git add ListExamples.java <enter>`
 
