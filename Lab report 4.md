@@ -60,21 +60,21 @@ Command will write our changes onto the java file and then quit vim, bringing us
 5.
 <img width="355" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/6c75819d-b5ab-4fda-b1d0-97627c4acf7c">
 
-**test.sh `enter`**
+`test.sh <enter>`
 
 command ran, the command simply runs through a script explaining that the Java file now matches with the testing, meaning the changes made were successful.
 
 6. 
 <img width="341" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/26fd1f77-513f-4079-ad67-6ca2cbbc3a60">
 
-**git add ListExamples.java `enter`** 
+`git add ListExamples.java <enter>`
 
 This will add the file we just saved and editted on our remote computer, ListExamples.java, and add it to a list of file we will prepare to commit and push onto the github repository.
 
-**git commit `enter`**
+`git commit <enter>`
 
 This will confirm all the files we used `git add` on and prepare it for the next command. THe command puts us in a vim terminal. Over here we can either add commit messages or not. In the case of wanting to do commit messages, do **<a> `enter`** for insert mode, then type in whatever it is you want to leave as a message, then click **<esc>** to go into normal mode, then type in **<:wq> `enter`** to save and exit the commit message, which will exit vim and put you back in the terminal. If you don't want to go into vim, you can use the -m command with commit like git commit -m "comment" or you can simply exit without putting any messages in.
 
-**git push `enter`**
+`git push <enter>`
 
 This will push the committed changes to the github repository, successfully updating to the fixed product.
