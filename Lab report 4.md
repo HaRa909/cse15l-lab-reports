@@ -20,7 +20,7 @@ This command clones the forked repository that can be later pushed to.
 3. 
 <img width="491" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/d3387840-b6da-4694-9d54-08f9013bfb49">
 
-`test.sh <enter>`
+`bash test.sh <enter>`
 
 Command ran, the command simply runs through a script explaining there is an issue with ListExamples.java file.
 
