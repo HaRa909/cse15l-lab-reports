@@ -30,15 +30,20 @@ The bug is coming from the fact that instead of the correct string being compare
 
 #4. All info needed for setup
 
-file/directory structure
-.\technical\biomed\ar615.txt
-.\technical\plos\journal.pbio.0020150].txt
 
-technical
--  biomed
-   * ar615.txt
--  plos
-   * journal.pbio.0020150.txt
+
+
+technical/
+-  biomed/
+   * ar615.txt ("Resonance")
+-  plos/
+   * journal.pbio.0020150.txt ("Resonance")
+- any 1389 more .txt files with any text
+
+TestDocServer.java
+test.sh
+DocSearchServer.java
+Server.java
 
 
 
