@@ -1,4 +1,4 @@
-#1. Symptom and description
+# 1. Symptom and description
 
 
 <img width="482" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/ac414c06-e6b1-49d0-90ad-356d051aa78d">
@@ -13,12 +13,12 @@ This is the failure inducing input
 <img width="696" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/2c9533d0-a7c2-4f6b-9439-b110b14dfdad">
 
 
-#2. TA response
+# 2. TA response
 
 Check to see what your String is being compared to in your code. I would recommend printing statements of whatever variables you are comparing with to see what it is that fulfills the condition of those files being added to the output. 
 
 
-#3. What Student got by trying that
+# 3. What Student got by trying that
 
 <img width="485" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/c0bdb463-c7e8-4826-a3d7-31660700100c">
 
@@ -241,7 +241,7 @@ After making the change described, the output obtained in the OUtputs.txt file i
 
 
 
-#Part 2 Reflection
+# Part 2 Reflection
 
 
 Something interesting I learned from the second part of this class was how to use VIM, which was something I had no idea existed. I thought it was very cool that what is essentially a text editing tool could be loaded into a command line interface. It is also very cool how it sort of a baseline text editor that can be used on just about any terminal.
