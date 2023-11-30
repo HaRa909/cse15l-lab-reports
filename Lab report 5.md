@@ -32,7 +32,7 @@ The bug is coming from the fact that instead of the correct string being compare
 
 
 
-
+```
 technical/
 -  biomed/
    * ar615.txt ("Resonance")
@@ -44,7 +44,180 @@ TestDocServer.java
 test.sh
 DocSearchServer.java
 Server.java
+```
 
+the test.sh script will put the output in a file to analyze
 
+#File contents
 
+TestDocServer.java
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.io.IOException;
 
+public class TestDocSearch {
+	@Test 
+	public void testIndex() throws URISyntaxException, IOException {
+    Handler h = new Handler("./technical/");
+    URI rootPath = new URI("http://localhost/");
+    assertEquals("There are 1391 total files to search.", h.handleRequest(rootPath));
+	}
+	@Test 
+	public void testSearch() throws URISyntaxException, IOException {
+    Handler h = new Handler(".\\technical\\");
+    URI rootPath = new URI("http://localhost/search?q=Resonance");
+    String expect = "Found 2 paths:\n.\\technical\\biomed\\ar615.txt\n.\\technical\\plos\\journal.pbio.0020150.txt";
+    assertEquals(expect, h.handleRequest(rootPath));
+	}
+}
+```
+
+test.sh
+```
+set -e
+javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestDocSearch > Outputs.txt
+
+```
+DocSearchServer.java
+```
+import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.InetAddress;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+
+class FileHelpers {
+    static List<File> getFiles(Path start) throws IOException {
+        File f = start.toFile();
+        List<File> result = new ArrayList<>();
+        if(f.isDirectory()) {
+            File[] paths = f.listFiles();
+            for(File subFile: paths) {
+                result.addAll(getFiles(subFile.toPath()));
+            }
+        }
+        else {
+            result.add(start.toFile());
+        }
+        return result;
+    }
+    static String readFile(File f) throws IOException {
+        return new String(Files.readAllBytes(f.toPath()));
+    }
+}
+
+class Handler implements URLHandler {
+    Path base;
+    Handler(String directory) throws IOException {
+      this.base = Paths.get(directory);
+    }
+    public String handleRequest(URI url) throws IOException {
+       List<File> paths = FileHelpers.getFiles(this.base);
+       if (url.getPath().equals("/")) {
+           return String.format("There are %d total files to search.", paths.size());
+       } else if (url.getPath().equals("/search")) {
+           String[] parameters = url.getQuery().split("=");
+           if (parameters[0].equals("q")) {
+               String result = "" ;
+               List<String> foundPaths = new ArrayList<>();
+               for(File f: paths) {
+                   if(FileHelpers.readFile(f).contains(parameters[0])) {
+                       foundPaths.add(f.toString());
+                   }
+               }
+               Collections.sort(foundPaths);
+               result = String.join("\n", foundPaths);
+               return String.format("Found %d paths:\n%s", foundPaths.size(), result);
+           }
+           else {
+               return "Couldn't find query parameter q";
+           }
+       }
+       else {
+           return "Don't know how to handle that path!";
+       }
+    }
+}
+
+class DocSearchServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler(args[1]));
+    }
+}
+```
+
+Server.java
+```
+// A simple web server using Java's built-in HttpServer
+
+// Examples from https://dzone.com/articles/simple-http-server-in-java were useful references
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.net.InetAddress;
+import java.net.URI;
+
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpServer;
+
+interface URLHandler {
+    String handleRequest(URI url) throws IOException;
+}
+
+class ServerHttpHandler implements HttpHandler {
+    URLHandler handler;
+    ServerHttpHandler(URLHandler handler) {
+      this.handler = handler;
+    }
+    public void handle(final HttpExchange exchange) throws IOException {
+        // form return body after being handled by program
+        try {
+            String ret = handler.handleRequest(exchange.getRequestURI());
+            // form the return string and write it on the browser
+            exchange.sendResponseHeaders(200, ret.getBytes().length);
+            OutputStream os = exchange.getResponseBody();
+            os.write(ret.getBytes());
+            os.close();
+        } catch(Exception e) {
+            String response = e.toString();
+            exchange.sendResponseHeaders(500, response.getBytes().length);
+            OutputStream os = exchange.getResponseBody();
+            os.write(response.getBytes());
+            os.close();
+        }
+    }
+}
+
+public class Server {
+    public static void start(int port, URLHandler handler) throws IOException {
+        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
+
+        //create request entrypoint
+        server.createContext("/", new ServerHttpHandler(handler));
+
+        //start the server
+        server.start();
+        System.out.println("Server started at http://" + InetAddress.getLocalHost().getHostName() + ":" + port);
+        System.out.println("(Or, if it's running locally on this computer, use http://localhost:" + port + " )");
+    }
+}
+```
