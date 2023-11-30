@@ -221,3 +221,27 @@ public class Server {
     }
 }
 ```
+
+
+
+
+The edit required to fix the bug is by going to this section of DocSearchServer.java, and replacing the parameters[0] with parameters[1] instead, this fixes the issue
+
+```
+for(File f: paths) {
+                   if(FileHelpers.readFile(f).contains(parameters[0])) {
+                       foundPaths.add(f.toString());
+```
+
+
+After making the change described, the output obtained in the OUtputs.txt file is as shows:
+
+<img width="397" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/563160ea-db50-4aef-8012-37f17c4a50c4">
+
+
+
+
+#Part 2 Reflection
+
+
+Something interesting I learned from the second part of this class was how to use VIM, which was something I had no idea existed. I thought it was very cool that what is essentially a text editing tool could be loaded into a command line interface. It is also very cool how it sort of a baseline text editor that can be used on just about any terminal.
