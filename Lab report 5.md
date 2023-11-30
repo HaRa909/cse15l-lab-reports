@@ -22,7 +22,14 @@ Check to see what your String is being compared to in your code. I would recomme
 
 <img width="485" alt="image" src="https://github.com/HaRa909/cse15l-lab-reports/assets/146860413/c0bdb463-c7e8-4826-a3d7-31660700100c">
 
-The bug is coming from the fact that instead of the correct string being compared against for the program, the string "q" is compared, and every file with the letter q in it is then listed, and because almost every file has that single letter, all of them pop up in the output. This comes from how the parameters string array, an array composed of two elements, one part being q and the other part being the actual string after the query, which is parameters[1], while parameters[0] is just the string "q".
+The bug is coming from the fact that instead of the correct string being compared against for the program, the string "q" is compared, and every file with the letter q in it is then listed, and because almost every file has that single letter, all of them pop up in the output. This comes from how the parameters string array, an array composed of two elements, one part being q and the other part being the actual string after the query, which is parameters[1] that equals string "Resonance", while parameters[0] is just the string "q".
+
+
+
+
+
+#4. ALl info needed for setup
+
 
 
 
