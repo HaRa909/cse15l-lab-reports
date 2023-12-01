@@ -48,7 +48,7 @@ Server.java
 
 the test.sh script will put the output in a file to analyze
 
-#File contents
+# File contents
 
 TestDocServer.java
 ```
